@@ -1,13 +1,54 @@
 body {
-background: url("../.png") left center no-repeat;
+background: url("../sword.png") left center no-repeat;
 -webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
 height: 700px;
 }
+.button {
+     position: relative;
+  padding: 25px 35px;
+  font-size: 30px;
+  font-family: 'Freckle Face', cursive;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #8181F7;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 15px #999;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+}
 
-button {
-  border-style: solid;
-  border-color: #0007D1;
-  height: 50px
+.button:hover {background-color: #00FFBF}
+
+.button:active {
+  background-color: #FF0080;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.button:after {
+    content: "";
+    background: #FE2E9A;
+    display: block;
+    position: absolute;
+    padding-top: 100%;
+    padding-left: 1000%;
+    margin-left: -20px;
+    margin-top: -10%;
+    opacity: 0;
+    transition: all 0.8s
+}
+.button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+h1 {
+  font-family: 'Freckle Face', cursive;
 }
